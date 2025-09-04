@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prizepop - Free Redeem Codes| SideGaming12</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .code-box {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .code-box::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+            transform: rotate(45deg);
+            transition: all 0.5s;
+        }
+        
+        .code-box:hover::before {
+            animation: shine 0.5s ease-in-out;
+        }
+        
+        @keyframes shine {
+            0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+            100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+        }
+        
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .notification {
+            animation: slideIn 0.3s ease-out;
+        }
+        
+        @keyframes slideIn {
+            from { transform: translateX(100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        
+        .youtube-section {
+            background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
+        }
+        
+        .youtube-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .subscribe-btn {
+            background: #ff0000;
+            transition: all 0.3s ease;
+        }
+        
+        .subscribe-btn:hover {
+            background: #cc0000;
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(255, 0, 0, 0.3);
+        }
+        
+        .instagram-section {
+            background: linear-gradient(135deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
+        }
+        
+        .instagram-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .follow-btn {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            transition: all 0.3s ease;
+        }
+        
+        .follow-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(225, 48, 108, 0.3);
+        }
+        
+        .admin-panel {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            padding: 20px;
+            z-index: 1000;
+            max-width: 350px;
+            transform: translateY(150%);
+            transition: transform 0.3s ease;
+        }
+        
+        .admin-panel.open {
+            transform: translateY(0);
+        }
+        
+        .admin-toggle {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #6366f1;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+            z-index: 999;
+            transition: all 0.3s ease;
+        }
+        
+        .admin-toggle:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <i class="fas fa-key text-purple-600 text-2xl mr-3"></i>
+                    <span class="font-bold text-xl text-gray-800">Prizepop</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-purple-600 transition">Home</a>
+                    <a href="#giveaways" class="text-gray-700 hover:text-purple-600 transition">Giveaways</a>
+                    <a href="#youtube" class="text-gray-700 hover:text-purple-600 transition flex items-center">
+                        <i class="fab fa-youtube text-red-600 mr-1"></i>
+                        YouTube
+                    </a>
+                    <a href="#instagram" class="text-gray-700 hover:text-purple-600 transition flex items-center">
+                        <i class="fab fa-instagram text-pink-600 mr-1"></i>
+                        Instagram
+                    </a>
+                    <a href="#how-it-works" class="text-gray-700 hover:text-purple-600 transition">How it Works</a>
+                    <a href="#about" class="text-gray-700 hover:text-purple-600 transition">About</a>
+                </div>
+                <button class="md:hidden" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars text-gray-700 text-xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#home" class="block px-3 py-2 text-gray-700 hover:bg-purple-50 rounded">Home</a>
+                <a href="#giveaways" class="block px-3 py-2 text-gray-700 hover:bg-purple-50 rounded">Giveaways</a>
+                <a href="#youtube" class="block px-3 py-2 text-gray-700 hover:bg-purple-50 rounded flex items-center">
+                    <i class="fab fa-youtube text-red-600 mr-2"></i>
+                    YouTube
+                </a>
+                <a href="#instagram" class="block px-3 py-2 text-gray-700 hover:bg-purple-50 rounded flex items-center">
+                    <i class="fab fa-instagram text-pink-600 mr-2"></i>
+                    Instagram
+                </a>
+                <a href="#how-it-works" class="block px-3 py-2 text-gray-700 hover:bg-purple-50 rounded">How it Works</a>
+                <a href="#about" class="block px-3 py-2 text-gray-700 hover:bg-purple-50 rounded">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">Get Free Game & Software Codes</h1>
+                <p class="text-xl md:text-2xl mb-8 opacity-90">Daily giveaways of premium codes for games, software, and more! and anyone want to donate some money UPI ID: 9508216024@fam</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+                    <button onclick="scrollToGiveaways()" class="bg-white text-purple-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition transform hover:scale-105">
+                        <i class="fas fa-gift mr-2"></i>View Giveaways
+                    </button>
+                    <button onclick="showNotification('Subscribe to our newsletter for daily updates!')" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-purple-600 transition">
+                        <i class="fas fa-bell mr-2"></i>Get Notified
+                    </button>
+                </div>
+                <!-- Social Media Promotion in Hero -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <div class="inline-flex items-center bg-white bg-opacity-20 backdrop-blur-sm rounded-full px-6 py-3">
+                        <i class="fab fa-youtube text-white text-2xl mr-3"></i>
+                        <span class="text-lg">YouTube: </span>
+                        <a href="https://www.youtube.com/@sidegaming12" target="_blank" class="font-bold underline ml-2 hover:text-yellow-300 transition">@sidegaming12</a>
+                    </div>
+                    <div class="inline-flex items-center bg-white bg-opacity-20 backdrop-blur-sm rounded-full px-6 py-3">
+                        <i class="fab fa-instagram text-white text-2xl mr-3"></i>
+                        <span class="text-lg">Instagram: </span>
+                        <a href="https://www.instagram.com/raza_sahil12" target="_blank" class="font-bold underline ml-2 hover:text-yellow-300 transition">@raza_sahil12</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- YouTube Channel Section -->
+    <section id="youtube" class="youtube-section text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">Visit Our YouTube Channel</h2>
+                <p class="text-xl opacity-90">Subscribe to @sidegaming12 for awesome gaming content!</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <div class="youtube-card rounded-2xl p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mr-4">
+                            <i class="fab fa-youtube text-red-600 text-4xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold">@sidegaming12</h3>
+                            <p class="opacity-80">Gaming Channel</p>
+                        </div>
+                    </div>
+                    <p class="text-lg mb-6 opacity-90">
+                        Join our gaming community! We post daily gaming videos, tutorials, walkthroughs, and exclusive content you won't find anywhere else. Subscribe and get more rewards.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold" id="youtube-videos">15+</div>
+                            <div class="opacity-80">Videos</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold" id="youtube-subscribers">15+</div>
+                            <div class="opacity-80">Subscribers</div>
+                        </div>
+                    </div>
+                    <a href="https://www.youtube.com/@sidegaming12" target="_blank" class="subscribe-btn text-white px-8 py-4 rounded-lg font-semibold inline-flex items-center justify-center w-full">
+                        <i class="fab fa-youtube mr-3"></i>
+                        Subscribe Now
+                    </a>
+                </div>
+                
+                <div class="relative">
+                    <div class="aspect-w-16 aspect-h-9 bg-black rounded-2xl overflow-hidden shadow-2xl">
+                        <iframe 
+                            src="https://www.youtube.com/embed/?listType=user_uploads&list=sidegaming12" 
+                            class="w-full h-96 lg:h-full"
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <a href="https://www.youtube.com/@sidegaming12" target="_blank" class="bg-red-600 text-white w-20 h-20 rounded-full flex items-center justify-center hover:bg-red-700 transition transform hover:scale-110">
+                            <i class="fab fa-youtube text-3xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Section -->
+    <section id="instagram" class="instagram-section text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">Follow Us on Instagram</h2>
+                <p class="text-xl opacity-90">Follow @raza_sahil12 for behind-the-scenes content!</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <div class="relative">
+                    <div class="grid grid-cols-3 gap-2">
+                        <div class="aspect-square bg-gray-800 rounded-lg overflow-hidden">
+                            <img src="https://picsum.photos/seed/insta1/300/300.jpg" alt="Instagram post" class="w-full h-full object-cover">
+                        </div>
+                        <div class="aspect-square bg-gray-800 rounded-lg overflow-hidden">
+                            <img src="https://picsum.photos/seed/insta2/300/300.jpg" alt="Instagram post" class="w-full h-full object-cover">
+                        </div>
+                        <div class="aspect-square bg-gray-800 rounded-lg overflow-hidden">
+                            <img src="https://picsum.photos/seed/insta3/300/300.jpg" alt="Instagram post" class="w-full h-full object-cover">
+                        </div>
+                        <div class="aspect-square bg-gray-800 rounded-lg overflow-hidden">
+                            <img src="https://picsum.photos/seed/insta4/300/300.jpg" alt="Instagram post" class="w-full h-full object-cover">
+                        </div>
+                        <div class="aspect-square bg-gray-800 rounded-lg overflow-hidden">
+                            <img src="https://picsum.photos/seed/insta5/300/300.jpg" alt="Instagram post" class="w-full h-full object-cover">
+                        </div>
+                        <div class="aspect-square bg-gray-800 rounded-lg overflow-hidden">
+                            <img src="https://picsum.photos/seed/insta6/300/300.jpg" alt="Instagram post" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <a href="https://www.instagram.com/raza_sahil12" target="_blank" class="bg-white text-pink-600 w-20 h-20 rounded-full flex items-center justify-center hover:bg-gray-100 transition transform hover:scale-110">
+                            <i class="fab fa-instagram text-3xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="instagram-card rounded-2xl p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mr-4">
+                            <i class="fab fa-instagram text-pink-600 text-4xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold">@raza_sahil12</h3>
+                            <p class="opacity-80">Gaming & Lifestyle</p>
+                        </div>
+                    </div>
+                    <p class="text-lg mb-6 opacity-90">
+                        Follow our Instagram for exclusive gaming moments, behind-the-scenes content, giveaways, and personal updates you won't find anywhere else! follow and get more rewards.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold" id="instagram-posts">10+</div>
+                            <div class="opacity-80">Posts</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold" id="instagram-followers">30+</div>
+                            <div class="opacity-80">Followers</div>
+                        </div>
+                    </div>
+                    <a href="https://www.instagram.com/raza_sahil12" target="_blank" class="follow-btn text-white px-8 py-4 rounded-lg font-semibold inline-flex items-center justify-center w-full">
+                        <i class="fab fa-instagram mr-3"></i>
+                        Follow Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Giveaway -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Featured Giveaway</h2>
+                <p class="text-gray-600">Don't miss our biggest giveaway of the day!</p>
+                <!-- Social Media References -->
+                <p class="text-sm text-gray-500 mt-2">
+                    <i class="fab fa-youtube text-red-600 mr-1"></i>
+                    <i class="fab fa-instagram text-pink-600 mr-1"></i>
+                    Exclusive for our followers - 
+                    <a href="https://www.youtube.com/@sidegaming12" target="_blank" class="text-purple-600 hover:underline">@sidegaming12</a> & 
+                    <a href="https://www.instagram.com/raza_sahil12" target="_blank" class="text-purple-600 hover:underline">@raza_sahil12</a>
+                </p>
+            </div>
+            
+            <div class="bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl p-8 text-white card-hover">
+                <div class="flex flex-col md:flex-row items-center justify-between">
+                    <div class="mb-6 md:mb-0">
+                        <h3 class="text-2xl font-bold mb-2">Steam Game Bundle</h3>
+                        <p class="text-lg opacity-90 mb-4">5 Premium Games Worth ₹500</p>
+                        <div class="flex items-center space-x-6">
+                            <div class="text-center">
+                                <div class="text-3xl font-bold" id="countdown-hours">12</div>
+                                <div class="text-sm opacity-75">Hours</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-3xl font-bold" id="countdown-minutes">34</div>
+                                <div class="text-sm opacity-75">Minutes</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-3xl font-bold" id="countdown-seconds">56</div>
+                                <div class="text-sm opacity-75">Seconds</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-5xl mb-4">🎮</div>
+                        <button onclick="claimFeaturedCode()" class="bg-white text-purple-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition transform hover:scale-105 pulse">
+                            Claim Code Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Active Giveaways -->
+    <section id="giveaways" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Active Giveaways</h2>
+                <p class="text-gray-600">Grab these codes before they run out!</p>
+                <!-- Social Media References -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center mt-4">
+                    <div class="inline-flex items-center bg-red-100 text-red-700 px-4 py-2 rounded-full">
+                        <i class="fab fa-youtube mr-2"></i>
+                        <span>YouTube Subscribers get 2x entries!</span>
+                    </div>
+                    <div class="inline-flex items-center bg-pink-100 text-pink-700 px-4 py-2 rounded-full">
+                        <i class="fab fa-instagram mr-2"></i>
+                        <span>Instagram Followers get bonus codes!</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="giveawaysGrid">
+                <!-- Giveaway cards will be dynamically inserted here -->  
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">How It Works</h2>
+                <p class="text-gray-600">Getting free codes has never been easier!</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="bg-purple-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-search text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">1. Find Giveaway</h3>
+                    <p class="text-gray-600">Browse our active giveaways and find codes for your favorite games or software.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-purple-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-hand-pointer text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">2. Click Claim</h3>
+                    <p class="text-gray-600">Click the claim button to get your unique redeem code. No registration required!</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-purple-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-check-circle text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">3. Redeem & Enjoy</h3>
+                    <p class="text-gray-600">Copy the code and redeem it on the respective platform. Enjoy your free content!</p>
+                </div>
+            </div>
+            
+            <!-- Social Media CTAs -->
+            <div class="mt-12 flex flex-col sm:flex-row gap-4 justify-center">
+                <div class="inline-flex items-center bg-gray-100 rounded-full px-6 py-3">
+                    <i class="fab fa-youtube text-red-600 text-xl mr-3"></i>
+                    <span class="text-gray-700">For gaming content: </span>
+                    <a href="https://www.youtube.com/@sidegaming12" target="_blank" class="font-bold text-purple-600 ml-2 hover:underline">@sidegaming12</a>
+                </div>
+                <div class="inline-flex items-center bg-gray-100 rounded-full px-6 py-3">
+                    <i class="fab fa-instagram text-pink-600 text-xl mr-3"></i>
+                    <span class="text-gray-700">For behind-the-scenes: </span>
+                    <a href="https://www.instagram.com/raza_sahil12" target="_blank" class="font-bold text-purple-600 ml-2 hover:underline">@raza_sahil12</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-16 gradient-bg text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-4">Never Miss a Giveaway!</h2>
+            <p class="text-xl mb-8 opacity-90">Subscribe to our newsletter and get notified about new giveaways instantly.</p>
+            <p class="mb-6 opacity-80">
+                <i class="fab fa-youtube mr-2"></i>
+                <i class="fab fa-instagram mr-2"></i>
+                Also follow us on YouTube (@sidegaming12) and Instagram (@raza_sahil12) for exclusive content!
+            </p>
+            <form onsubmit="subscribeNewsletter(event)" class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+                <input type="email" placeholder="Enter your email" required class="flex-1 px-6 py-3 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-white">
+                <button type="submit" class="bg-white text-purple-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition" razasahil789654@gmail.com>
+                    Subscribe Now
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-key text-purple-400 text-2xl mr-3"></i>
+                        <span class="font-bold text-xl">Prizepop</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">Your trusted source for free game and software codes.</p>
+                    <!-- Social Media in Footer -->
+                    <div class="flex flex-col gap-2">
+                        <a href="https://www.youtube.com/@sidegaming12" target="_blank" class="inline-flex items-center text-red-400 hover:text-red-300 transition">
+                            <i class="fab fa-youtube mr-2"></i>
+                            <span>YouTube: @sidegaming12</span>
+                        </a>
+                        <a href="https://www.instagram.com/raza_sahil12" target="_blank" class="inline-flex items-center text-pink-400 hover:text-pink-300 transition">
+                            <i class="fab fa-instagram mr-2"></i>
+                            
+                            <span>Instagram: @raza_sahil12</span>
+                        </a><colour-green></colour-grey><span> Join and get more rewards
+                
+                    </div> Donate Us on UPI ID: 9508216024@fam
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">Home</a></li>
+                        <li><a href="#" class="hover:text-white transition">Giveaways</a></li>
+                        <li><a href="#youtube" class="hover:text-white transition">YouTube Channel</a></li>
+                        <li><a href="#instagram" class="hover:text-white transition">Instagram</a></li>
+                        <li><a href="#" class="hover:text-white transition">How it Works</a></li>
+                        <li><a href="#" class="hover:text-white transition">About</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">Categories</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">Games</a></li>
+                        <li><a href="#" class="hover:text-white transition">Software</a></li>
+                        <li><a href="#" class="hover:text-white transition">Gift Cards</a></li>
+                        <li><a href="#" class="hover:text-white transition">Subscriptions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-discord text-xl"></i>
+                        </a>
+                        <!-- YouTube Link in Footer Social Media -->
+                        <a href="https://www.youtube.com/@sidegaming12" target="_blank" class="text-red-400 hover:text-red-300 transition">
+                            <i class="fab fa-youtube text-xl"></i>
+                        </a>
+                        <!-- Instagram Link in Footer Social Media -->
+                        <a href="https://www.instagram.com/raza_sahil12" target="_blank" class="text-pink-400 hover:text-pink-300 transition">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Prizepop. All rights reserved. | <a href="#" class="hover:text-white transition">Privacy Policy</a> | <a href="#" class="hover:text-white transition">Terms of Service</a></p>
+                <p class="mt-2">
+                    Gaming content by: 
+                    <a href="https://www.youtube.com/@sidegaming12" target="_blank" class="text-red-400 hover:text-red-300 transition">
+                        <i class="fab fa-youtube mr-1"></i>@sidegaming12
+                    </a>
+                    &nbsp;|&nbsp;
+                    Follow on Instagram: 
+                    <a href="https://www.instagram.com/raza_sahil12" target="_blank" class="text-pink-400 hover:text-pink-300 transition">
+                        <i class="fab fa-instagram mr-1"></i>@raza_sahil12
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Admin Toggle Button -->
+    <div class="admin-toggle" onclick="toggleAdminPanel()">
+        <i class="fas fa-cog text-2xl"></i>
+    </div>
+
+    <!-- Admin Panel -->
+    <div class="admin-panel" id="adminPanel">
+        <h3 class="text-xl font-bold mb-4 text-gray-800">Admin Panel</h3>
+        
+        <div class="mb-6">
+            <h4 class="font-semibold mb-2 text-gray-700">YouTube Stats</h4>
+            <div class="space-y-3">
+                <div>
+                    <label class="block text-sm text-gray-600 mb-1">Videos</label>
+                    <input type="number" id="youtubeVideosInput" class="w-full px-3 py-2 border rounded-lg" value="500">
+                </div>
+                <div>
+                    <label class="block text-sm text-gray-600 mb-1">Subscribers</label>
+                    <input type="number" id="youtubeSubscribersInput" class="w-full px-3 py-2 border rounded-lg" value="10000">
+                </div>
+                <button onclick="updateYouTubeStats()" class="w-full bg-red-600 text-white py-2 rounded-lg hover:bg-red-700 transition">
+                    Update YouTube Stats
+                </button>
+            </div>
+        </div>
+        
+        <div class="mb-6">
+            <h4 class="font-semibold mb-2 text-gray-700">Instagram Stats</h4>
+            <div class="space-y-3">
+                <div>
+                    <label class="block text-sm text-gray-600 mb-1">Posts</label>
+                    <input type="number" id="instagramPostsInput" class="w-full px-3 py-2 border rounded-lg" value="2000">
+                </div>
+                <div>
+                    <label class="block text-sm text-gray-600 mb-1">Followers</label>
+                    <input type="number" id="instagramFollowersInput" class="w-full px-3 py-2 border rounded-lg" value="5000">
+                </div>
+                <button onclick="updateInstagramStats()" class="w-full bg-pink-600 text-white py-2 rounded-lg hover:bg-pink-700 transition">
+                    Update Instagram Stats
+                </button>
+            </div>
+        </div>
+        
+        <div class="mb-4">
+            <h4 class="font-semibold mb-2 text-gray-700">Quick Actions</h4>
+            <div class="space-y-2">
+                <button onclick="resetStats()" class="w-full bg-gray-600 text-white py-2 rounded-lg hover:bg-gray-700 transition">
+                    Reset to Default
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification Container -->
+    <div id="notificationContainer" class="fixed top-20 right-4 z-50 space-y-2"></div>
+
+    <script>
+        // Sample giveaway data
+        const giveaways = [
+            {
+                id: 1,
+                title: "Steam Game: Cyberpunk 2077",
+                description: "Get the ultimate cyberpunk experience",
+                value: "$59.99",
+                remaining: 15,
+                total: 50,
+                category: "Games",
+                icon: "🎮"
+            },
+            {
+                id: 2,
+                title: "Adobe Creative Cloud",
+                description: "1 Month Subscription",
+                value: "$52.99",
+                remaining: 8,
+                total: 20,
+                category: "Software",
+                icon: "🎨"
+            },
+            {
+                id: 3,
+                title: "Netflix Premium",
+                description: "3 Months Subscription",
+                value: "$45.00",
+                remaining: 23,
+                total: 100,
+                category: "Subscriptions",
+                icon: "📺"
+            },
+            {
+                id: 4,
+                title: "PlayStation Plus",
+                description: "12 Months Membership",
+                value: "$59.99",
+                remaining: 5,
+                total: 30,
+                category: "Games",
+                icon: "🎯"
+            },
+            {
+                id: 5,
+                title: "Microsoft Office 365",
+                description: "6 Months Subscription",
+                value: "$59.99",
+                remaining: 12,
+                total: 50,
+                category: "Software",
+                icon: "💼"
+            },
+            {
+                id: 6,
+                title: "Spotify Premium",
+                description: "6 Months Subscription",
+                value: "$59.94",
+                remaining: 18,
+                total: 75,
+                category: "Subscriptions",
+                icon: "🎵"
+            }
+        ];
+
+        // Initialize the page
+        document.addEventListener('DOMContentLoaded', function() {
+            renderGiveaways();
+            startCountdown();
+            loadStats();
+        });
+
+        // Render giveaway cards
+        function renderGiveaways() {
+            const grid = document.getElementById('giveawaysGrid');
+            grid.innerHTML = giveaways.map(giveaway => `
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-4xl">${giveaway.icon}</span>
+                            <span class="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm font-semibold">
+                                ${giveaway.category}
+                            </span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">${giveaway.title}</h3>
+                        <p class="text-gray-600 mb-4">${giveaway.description}</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-2xl font-bold text-purple-600">${giveaway.value}</span>
+                            <div class="text-right">
+                                <div class="text-sm text-gray-500">Remaining</div>
+                                <div class="font-semibold ${giveaway.remaining < 10 ? 'text-red-500' : 'text-green-500'}">
+                                    ${giveaway.remaining}/${giveaway.total}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2 mb-4">
+                            <div class="bg-purple-600 h-2 rounded-full transition-all duration-500" style="width: ${(giveaway.remaining / giveaway.total) * 100}%"></div>
+                        </div>
+                        <button onclick="claimCode(${giveaway.id})" class="w-full bg-purple-600 text-white py-3 rounded-lg font-semibold hover:bg-purple-700 transition ${giveaway.remaining === 0 ? 'opacity-50 cursor-not-allowed' : ''}" ${giveaway.remaining === 0 ? 'disabled' : ''}>
+                            ${giveaway.remaining === 0 ? 'Out of Stock' : 'Claim Code'}
+                        </button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Claim code function
+        function claimCode(id) {
+            const giveaway = giveaways.find(g => g.id === id);
+            if (giveaway && giveaway.remaining > 0) {
+                // Generate random code
+                const code = generateRandomCode();
+                
+                // Show code modal
+                showCodeModal(giveaway, code);
+                
+                // Update remaining count
+                giveaway.remaining--;
+                renderGiveaways();
+                
+                // Show notification
+                showNotification(`Successfully claimed code for ${giveaway.title}!`);
+                
+                // Social media suggestions
+                setTimeout(() => {
+                    showNotification('Check out our YouTube channel @sidegaming12 for more gaming content!');
+                }, 2000);
+                
+                setTimeout(() => {
+                    showNotification('Follow us on Instagram @raza_sahil12 for exclusive content!');
+                }, 4000);
+            }
+        }
+
+        // Claim featured code
+        function claimFeaturedCode() {
+            const code = generateRandomCode();
+            showCodeModal({
+                title: "Steam Game Bundle",
+                description: "5 Premium Games Worth $150"
+            }, code);
+            showNotification("Successfully claimed the featured bundle!");
+            
+            // Social media suggestions
+            setTimeout(() => {
+                showNotification('Subscribe to @sidegaming12 for exclusive gaming content!');
+            }, 2000);
+            
+            setTimeout(() => {
+                showNotification('Follow @raza_sahil12 on Instagram for behind-the-scenes content!');
+            }, 4000);
+        }
+
+        // Generate random code
+        function generateRandomCode() {
+            const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+            let code = '';
+            for (let i = 0; i < 16; i++) {
+                if (i > 0 && i % 4 === 0) code += '-';
+                code += chars.charAt(Math.floor(Math.random() * chars.length));
+            }
+            return code;
+        }
+
+        // Show code modal
+        function showCodeModal(giveaway, code) {
+            const modal = document.createElement('div');
+            modal.className = 'fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4';
+            modal.innerHTML = `
+                <div class="bg-white rounded-2xl p-8 max-w-md w-full transform transition-all">
+                    <div class="text-center">
+                        <div class="text-6xl mb-4">🎉</div>
+                        <h3 class="text-2xl font-bold mb-2">Congratulations!</h3>
+                        <p class="text-gray-600 mb-6">You've successfully claimed:</p>
+                        <div class="bg-gray-100 rounded-lg p-4 mb-6">
+                            <h4 class="font-semibold mb-2">${giveaway.title}</h4>
+                            <p class="text-sm text-gray-600">${giveaway.description}</p>
+                        </div>
+                        <div class="code-box text-white p-6 rounded-lg mb-6">
+                            <p class="text-sm mb-2 opacity-75">Your Redeem Code:</p>
+                            <div class="flex items-center justify-between">
+                                <span class="text-2xl font-mono font-bold tracking-wider">${code}</span>
+                                <button onclick="copyToClipboard('${code}')" class="bg-white bg-opacity-20 hover:bg-opacity-30 px-4 py-2 rounded-lg transition">
+                                    <i class="fas fa-copy"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Social Media Promotion in Modal -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                            <div class="bg-red-50 rounded-lg p-4">
+                                <p class="text-sm text-red-800">
+                                    <i class="fab fa-youtube text-red-600 mr-2"></i>
+                                    Gaming content on YouTube: 
+                                    <a href="https://www.youtube.com/@sidegaming12" target="_blank" class="font-bold underline">@sidegaming12</a>
+                                </p>
+                            </div>
+                            <div class="bg-pink-50 rounded-lg p-4">
+                                <p class="text-sm text-pink-800">
+                                    <i class="fab fa-instagram text-pink-600 mr-2"></i>
+                                    Behind-the-scenes on Instagram: 
+                                    <a href="https://www.instagram.com/raza_sahil12" target="_blank" class="font-bold underline">@raza_sahil12</a>
+                                </p>
+                            </div>
+                        </div>
+                        <button onclick="closeModal(this)" class="bg-purple-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-purple-700 transition">
+                            Got it!
+                        </button>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(modal);
+        }
+
+        // Copy to clipboard
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                showNotification('Code copied to clipboard!');
+            });
+        }
+
+        // Close modal
+        function closeModal(button) {
+            button.closest('.fixed').remove();
+        }
+
+        // Show notification
+        function showNotification(message) {
+            const container = document.getElementById('notificationContainer');
+            const notification = document.createElement('div');
+            notification.className = 'notification bg-green-500 text-white px-6 py-4 rounded-lg shadow-lg flex items-center space-x-3';
+            notification.innerHTML = `
+                <i class="fas fa-check-circle"></i>
+                <span>${message}</span>
+            `;
+            container.appendChild(notification);
+            
+            setTimeout(() => {
+                notification.remove();
+            }, 3000);
+        }
+
+        // Countdown timer
+        function startCountdown() {
+            let hours = 12;
+            let minutes = 34;
+            let seconds = 56;
+            
+            setInterval(() => {
+                seconds--;
+                if (seconds < 0) {
+                    seconds = 59;
+                    minutes--;
+                    if (minutes < 0) {
+                        minutes = 59;
+                        hours--;
+                        if (hours < 0) {
+                            hours = 23;
+                        }
+                    }
+                }
+                
+                document.getElementById('countdown-hours').textContent = hours.toString().padStart(2, '0');
+                document.getElementById('countdown-minutes').textContent = minutes.toString().padStart(2, '0');
+                document.getElementById('countdown-seconds').textContent = seconds.toString().padStart(2, '0');
+            }, 1000);
+        }
+
+        // Toggle mobile menu
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Scroll to giveaways
+        function scrollToGiveaways() {
+            document.getElementById('giveaways').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Newsletter subscription
+        function subscribeNewsletter(event) {
+            event.preventDefault();
+            const email = event.target.querySelector('input[type="email"]').value;
+            showNotification(`Successfully subscribed with ${email}!`);
+            showNotification('Don\'t forget to check out our YouTube channel @sidegaming12 and Instagram @raza_sahil12!');
+            event.target.reset();
+        }
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                    // Close mobile menu if open
+                    document.getElementById('mobileMenu').classList.add('hidden');
+                }
+            });
+        });
+
+        // Admin Panel Functions
+        function toggleAdminPanel() {
+            const panel = document.getElementById('adminPanel');
+            panel.classList.toggle('open');
+        }
+
+        function updateYouTubeStats() {
+            const videos = document.getElementById('youtubeVideosInput').value;
+            const subscribers = document.getElementById('youtubeSubscribersInput').value;
+            
+            // Update display
+            document.getElementById('youtube-videos').textContent = formatNumber(videos) + '+';
+            document.getElementById('youtube-subscribers').textContent = formatNumber(subscribers) + '+';
+            
+            // Save to localStorage
+            localStorage.setItem('youtubeVideos', videos);
+            localStorage.setItem('youtubeSubscribers', subscribers);
+            
+            showNotification('YouTube stats updated successfully!');
+        }
+
+        function updateInstagramStats() {
+            const posts = document.getElementById('instagramPostsInput').value;
+            const followers = document.getElementById('instagramFollowersInput').value;
+            
+            // Update display
+            document.getElementById('instagram-posts').textContent = formatNumber(posts) + '+';
+            document.getElementById('instagram-followers').textContent = formatNumber(followers) + '+';
+            
+            // Save to localStorage
+            localStorage.setItem('instagramPosts', posts);
+            localStorage.setItem('instagramFollowers', followers);
+            
+            showNotification('Instagram stats updated successfully!');
+        }
+
+        function resetStats() {
+            // Reset inputs
+            document.getElementById('youtubeVideosInput').value = 500;
+            document.getElementById('youtubeSubscribersInput').value = 10000;
+            document.getElementById('instagramPostsInput').value = 2000;
+            document.getElementById('instagramFollowersInput').value = 5000;
+            
+            // Update display
+            document.getElementById('youtube-videos').textContent = '500+';
+            document.getElementById('youtube-subscribers').textContent = '10K+';
+            document.getElementById('instagram-posts').textContent = '2K+';
+            document.getElementById('instagram-followers').textContent = '5K+';
+            
+            // Clear localStorage
+            localStorage.removeItem('youtubeVideos');
+            localStorage.removeItem('youtubeSubscribers');
+            localStorage.removeItem('instagramPosts');
+            localStorage.removeItem('instagramFollowers');
+            
+            showNotification('Stats reset to default values!');
+        }
+
+        function loadStats() {
+            // Load from localStorage if available
+            const youtubeVideos = localStorage.getItem('youtubeVideos');
+            const youtubeSubscribers = localStorage.getItem('youtubeSubscribers');
+            const instagramPosts = localStorage.getItem('instagramPosts');
+            const instagramFollowers = localStorage.getItem('instagramFollowers');
+            
+            if (youtubeVideos) {
+                document.getElementById('youtubeVideosInput').value = youtubeVideos;
+                document.getElementById('youtube-videos').textContent = formatNumber(youtubeVideos) + '+';
+            }
+            
+            if (youtubeSubscribers) {
+                document.getElementById('youtubeSubscribersInput').value = youtubeSubscribers;
+                document.getElementById('youtube-subscribers').textContent = formatNumber(youtubeSubscribers) + '+';
+            }
+            
+            if (instagramPosts) {
+                document.getElementById('instagramPostsInput').value = instagramPosts;
+                document.getElementById('instagram-posts').textContent = formatNumber(instagramPosts) + '+';
+            }
+            
+            if (instagramFollowers) {
+                document.getElementById('instagramFollowersInput').value = instagramFollowers;
+                document.getElementById('instagram-followers').textContent = formatNumber(instagramFollowers) + '+';
+            }
+        }
+
+        function formatNumber(num) {
+            if (num >= 1000000) {
+                return (num / 1000000).toFixed(1) + 'M';
+            } else if (num >= 1000) {
+                return (num / 1000).toFixed(1) + 'K';
+            }
+            return num.toString();
+        }
+    </script>
+</body>
+</html>
